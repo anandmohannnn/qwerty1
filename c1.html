@@ -1,0 +1,20 @@
+<doctype html>
+<htmll data-ng-app="">
+<head>
+	<title>directives and data binding</title>
+</head>
+<body data-ng-init="names=['anand','niru','ammus']">
+	Name:
+	<br/>
+	<input type="text" data-ng-model="name">
+	{{name}}
+	<br/>
+	<ul>
+		<li data-ng-repeat="favName in names">
+			{{favName}}
+	</ul>	
+	<script src="angular.js"></script>
+
+</body>
+
+</html>
